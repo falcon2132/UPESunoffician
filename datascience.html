@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semester Course Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Semester Course Plans</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="subject.html">Subjects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrap content in .main-content to fix footer overlap -->
+    <div class="main-content">
+
+        <section class="search-section">
+            <input type="text" id="search-bar" placeholder="Search for a subject..." />
+            <button onclick="searchSubject()">Search</button>
+        </section>
+
+        <section class="courses">
+            <h2>Available Subjects</h2>
+
+            <div class="course-card">
+                <h3>Big Data</h3>
+                <p>Course Plan: Theory</p>
+                <a href="BigDataT.pdf" target="_blank">View Syllabus</a><br>
+                <a href="BigDataT.pdf" download>Download Syllabus</a>
+            </div>
+
+            <div class="course-card">
+                <h3>BA for Industry & Functional Areas</h3>
+                <p>Course Plan: Theory</p>
+                <a href="B forIndustriesT.pdf" target="_blank">View Syllabus</a><br>
+                <a href="B forIndustriesT.pdf" download>Download Syllabus</a>
+            </div>
+
+            <div class="course-card">
+                <h3>Compiler Design</h3>
+                <p>Course Plan: Theory</p>
+                <a href="syllabus/CompilerDesign.pdf" target="_blank">View Syllabus</a><br>
+                <a href="syllabus/CompilerDesign.pdf" download>Download Syllabus</a>
+            </div>
+
+            <div class="course-card">
+                <h3>Cyber Security</h3>
+                <p>Course Plan: Theory</p>
+                <a href="CyberSecurityT.pdf" target="_blank">View Syllabus</a><br>
+                <a href="CyberSecurityT.pdf" download>Download Syllabus</a>
+            </div>
+
+            <div class="course-card">
+                <h3>Social, Web & Web Analysis</h3>
+                <p>Course Plan: Theory</p>
+                <a href="syllabus/SocialWebAnalysis.pdf" target="_blank">View Syllabus</a><br>
+                <a href="syllabus/SocialWebAnalysis.pdf" download>Download Syllabus</a>
+            </div>
+
+        </section>
+
+    </div> <!-- End of main-content -->
+
+    <footer>
+        <p>&copy; 2025 Semester Course Plans. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H038TXXDEQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H038TXXDEQ');
+    </script>
+
+</body>
+</html>

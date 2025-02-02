@@ -1,0 +1,174 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: #ffcc00;
+    color: #0044cc;
+}
+
+/* Search Bar Section */
+.search-section {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+#search-bar {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 60%;
+    max-width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0033a0;
+    transform: scale(1.05);
+}
+
+/* Course Section */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Course Grid Layout */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 2rem;
+}
+
+/* Course Cards */
+.course-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0044cc;
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-card a {
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+}
+
+.course-card a:hover {
+    color: #0033a0;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+@keyframes colorChange {
+    0% { color: #ff5733; }  /* Red */
+    25% { color: #33ff57; } /* Green */
+    50% { color: #3357ff; } /* Blue */
+    75% { color: #ff33a8; } /* Pink */
+    100% { color: #ff5733; } /* Back to Red */
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    animation: colorChange 3s infinite alternate ease-in-out;
+}

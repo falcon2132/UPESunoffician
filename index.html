@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semester Course Plans</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Color Changing Animation */
+        @keyframes colorChange {
+            0% { color: #ff5733; }  
+            25% { color: #33ff57; } 
+            50% { color: #3357ff; } 
+            75% { color: #ff33a8; } 
+            100% { color: #ff5733; } 
+        }
+
+        /* Styling for the links */
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem; /* Space between items */
+            padding: 3rem 1rem;
+        }
+
+        .links-container a {
+            text-decoration: none;
+            border: 2px solid #0044cc;
+            padding: 15px 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .links-container h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            animation: colorChange 3s infinite alternate ease-in-out;
+            margin: 0;
+            padding: 10px 20px;
+        }
+
+        .links-container a:hover {
+            background-color: #0044cc;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Semester Course Plans</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="subject.html">Subjects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Centered content with proper alignment -->
+    <div class="main-content">
+        <div class="links-container">
+            <a href="subject.html"><h2>CSE SEM-VI</h2></a>
+            <a href="calendar.xlsx"><h2>Academic Calendar</h2></a>
+            <a href="odd.htm"><h2>Odd</h2></a>
+            <a href="even.htm"><h2>Even</h2></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Semester Course Plans. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H038TXXDEQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H038TXXDEQ');
+    </script>
+
+</body>
+</html>
